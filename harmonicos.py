@@ -6,15 +6,15 @@ def funcao(semitom):
     # senitons maiores, no caso, utilizando sustenidos
     if semitom >= 0:
         if semitom > 10:
-            nu = 0
+            index = 0
             valor = ''
             frequencia = 440 * (2 ** (semitom  / 12))  # indica a frequencia em Hz
             frequenciaArredondada = round(frequencia, 4)
             for n in range(semitom + 1):   # percorre as notas de forma circular
-                valor = notasMaiores[nu - 2]
-                nu += 1
-                if nu == 11:
-                    nu = 0
+                valor = notasMaiores[index - 2]
+                index += 1
+                if index == 11:
+                    index = 0
             # usando o dó como exemplo # a referência
             frequenciaArredondada = round(frequencia, 4)
             print(f'A nota é : {valor} e a frequência é: {frequenciaArredondada} Hz')
@@ -27,14 +27,14 @@ def funcao(semitom):
     # semitons menores, no caso, usando b mol
     elif semitom < 0:
         if  (-1 * semitom) > 10:
-            nu = 0
+            index = 0
             frequencia = 440 * (2 ** (semitom  / 12))  # indica a frequencia em Hz
             frequenciaArredondada = round(frequencia, 4)
             for n in range(semitom * -1 + 1):   # percorre as notas de forma circular
                 valor = notasMenores[nu - 2]
-                nu += 1
-                if nu == 11:
-                    nu = 0
+                index += 1
+                if index == 11:
+                    index = 0
             # usando o dó como exemplo # a referência
             frequenciaArredondada = round(frequencia, 4)
             print(f'A nota é : {valor} e a frequência é: {frequenciaArredondada} Hz')
