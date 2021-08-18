@@ -31,7 +31,7 @@ def funcao(semitom):
             frequencia = 440 * (2 ** (semitom  / 12))  # indica a frequencia em Hz
             frequenciaArredondada = round(frequencia, 4)
             for n in range(semitom * -1 + 1):   # percorre as notas de forma circular
-                valor = notasMenores[nu - 2]
+                valor = notasMenores[index - 2]
                 index += 1
                 if index == 11:
                     index = 0
@@ -46,5 +46,5 @@ def funcao(semitom):
 
 
 if __name__ == '__main__':
-    semiton = int(input('Informe o semitom: '))
+    semiton: int = int(input('Informe o semitom: '))
     funcao(semiton)
