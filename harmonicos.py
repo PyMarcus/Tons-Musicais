@@ -15,7 +15,7 @@ def funcao(semitom):
                 index += 1
                 if index == 11:
                     index = 0
-            # usando o dó como exemplo # a referência
+            # usando o lá como exemplo # a referência
             frequenciaArredondada = round(frequencia, 4)
             print(f'A nota é : {valor} e a frequência é: {frequenciaArredondada} Hz')
         else:
@@ -35,7 +35,7 @@ def funcao(semitom):
                 index += 1
                 if index == 11:
                     index = 0
-            # usando o dó como exemplo # a referência
+            # usando o lá como exemplo # a referência
             frequenciaArredondada = round(frequencia, 4)
             print(f'A nota é : {valor} e a frequência é: {frequenciaArredondada} Hz')
         else:
