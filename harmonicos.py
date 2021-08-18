@@ -3,7 +3,7 @@ def funcao(semitom):
     notasMenores = ["A", "Bb", "B", "C", "Db", "D", "Eb", "E", "F", "Gb", "G", "Ab"]  # 11 tons
     valor = ''
 
-    # senitons maiores, no caso, utilizando sustenidos
+    # semitons maiores, no caso, utilizando sustenidos
     if semitom >= 0:
         if semitom > 10:
             index = 0
